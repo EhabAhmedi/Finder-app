@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Picker</title>
+  </head>
+  <body class="finder__body ">
+    <header class="finder__header">
+      <form id="form">
+        <input type="text" placeholder="Search"   id="search" class="search" onchange="OnSearchChange(event) " />
+      </form>
+    </header>
+    
+    <a href="index.html" class="logo__anchor"> 
+    <div class="personal__logo-finder">
+      <img class="logo__img-finder " src="/assets/direct-1.png" alt="" />
+      <span class="logo__popper">HOME
+        <i class="fa fa-house"></i>
+      </span>
+    </a>
+    
+    </div>
+    <div class="filter__wrapper">
+    <select id="filter" onchange="filterMovies(event)">
+      <option value="" disabled selected>Sort</option>
+      <option value="LOW_TO_HIGH">Review , low to high</option>
+      <option value="HIGH_TO_LOW">Review , high to low</option>
+      <option value="RATING">Rating</option>
+
+    </select>
+  </div>
+    <main class="finder__main" id="main">
+    
+      <div class="movie">
+        <img class= "skeleton" src="" alt="" />
+        <div class="movie-info">
+          <h3>Movie Title</h3>
+          <span class="green">9.8</span>
+        </div>
+        <div class="overview">
+          <h3>overview</h3>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus
+          praesentium molestiae ea incidunt perferendis dicta aspernatur, ab
+          quasi asperiores porro veniam minima nostrum sit nesciunt dolore ex
+          inventore quisquam ratione?
+        </div>
+      </div>
+      <div class="movie">
+        <img  src="" alt="" />
+        <div class="movie-info">
+          <h3>Movie Title</h3>
+          <span class="green">9.8</span>
+        </div>
+        <div class="overview">
+          <h3>overview</h3>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus
+          praesentium molestiae ea incidunt perferendis dicta aspernatur, ab
+          quasi asperiores porro veniam minima nostrum sit nesciunt dolore ex
+          inventore quisquam ratione?
+        </div>
+      </div>
+      <div class="movie">
+        <img  src="" alt="" />
+        <div class="movie-info">
+          <h3>Movie Title</h3>
+          <span class="green">9.8</span>
+        </div>
+        <div class="overview">
+          <h3>overview</h3>
+
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus
+          praesentium molestiae ea incidunt perferendis dicta aspernatur, ab
+          quasi asperiores porro veniam minima nostrum sit nesciunt dolore ex
+          inventore quisquam ratione?
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
